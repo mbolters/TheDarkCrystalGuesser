@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+       <!-- CSS -->
+        <link rel="stylesheet" href= "assets/css/style.css">
+        <link rel="stylesheet" href= "assets/css/reset.css">
         <!-- Bootstrap File -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 
 <!-- ToDO:
@@ -31,59 +35,56 @@
                 <h1 class="display-4">The Dark Crystal Guesser</h1>
                 <p class="lead">Click on the crystals to add to the score. Try to match the Great Crystal's score to heal it!</p>
                 <hr class="my-4">
-                <p>PUT THE NUMBER BOX HERE</p>
-                <hr class="my-4">
-                <p>Put YOUR NUMBER here</p>
-                <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="#" role="button">Play Again</a>
-                </p>        
-
-
-                <!-- game section -->
-		<div class="row" id="gameSection">
-
+            <p>                
                 <!-- first column for random number -->
-                <div class="col-md-3" id="numberSection">
+                <div class="col-md-12" id="numberSection">
                     <h3 class="text-center" id="random">Match Number:</h3>
-                    <h1 class="numberBox text-center" id="randomNumber">120</h1>
+                    <h1 class="numberBox text-center" id="randomNumber"></h1>
+                </div></p>
+                <hr class="my-4">
+            <p>                
+                <!-- third column for total points -->
+                <div class="col-md-12; text-center" id="totalPoints" >
+                    <h3 class="text-center" id="score">Current Total:</h3>
+                    <!-- <h1 class="numberBox text-center" id="totalNumber">0</h1> -->
                 </div>
-    
+
+                <hr class="my-4">
+            </p>
+
+                <p class="lead">
                 <!-- second column for buttons -->
-                <div class="buttons" id="buttonSection">       
+                <div class="buttons text-center" id="buttonSection">       
                         <img class="image" id="image1" src="assets/images/2-Star_Crystal.png" style= "width: 250px; height: 250px;">
                         <img class="image" id="image2" src="assets/images/crystal-transparent-2.png" style= "width: 250px; height: 250px;">
                         <img class="image" id="image3" src="assets/images/product-beads.png" style= "width: 250px; height: 250px;">
                         <img class="image" id="image4" src="assets/images/product-pendants.png" style= "width: 250px; height: 250px;">
                     </div>
-                    <hr>
-                <!-- third column for total points -->
-			<div class="col-md-12; text-center" id="totalPoints" >
-                    <h3 class="text-center" id="score">Your Total Score:</h3>
-                    <h1 class="numberBox text-center" id="totalNumber">0</h1>
-                </div>
-    
-            <hr>
-    
+                    <hr class="my-4">
+                </p>        
+
             <!-- footer section with tracking wins and losses -->
             <div class="row" id="scoreSection">
     
                 <!-- spacer column -->
                 <div class="col-md-12"></div>
-                <hr>
+                <hr class="my-4">
                 <!-- wins column -->
                 <div class="col-md-6" id="winSection">
                     <h3 class="text-center" id="wins">Wins:	0</h3>
                 </div>
-                <hr>
+                <hr class="my-4">
                 <!-- losses column -->
                 <div class="col-md-6" id="lossSection">
                     <h3 class="text-center" id="losses">Losses: 0</h3>
                 </div>
-                <hr>
+                <hr class="my-4">
                 <!-- spacer column -->
                 <div class="col-md-12"></div>
     
-            </div>    
+            </div>  
+        </div>  
+    </div>
 
 </body>
 <script src="assets/javascript/game.js"></script>

@@ -1,0 +1,13 @@
+.jumbotron {
+    background-image: url(https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2019/07/the-dark-crystal-via-netflix-2019.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+   }
+
+.buttons {
+    background-color: aqua; 
+    opacity: 0.5;
+}
