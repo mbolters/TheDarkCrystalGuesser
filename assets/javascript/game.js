@@ -1,16 +1,24 @@
 $(document).ready(function() {
 
 //sets variable crystalValues to random number globally
-let crystalValue1 = Math.floor(Math.random()*12+1);
-let crystalValue2 = Math.floor(Math.random()*12+1);
-let crystalValue3 = Math.floor(Math.random()*12+1);
-let crystalValue4 = Math.floor(Math.random()*12+1);
+let crystalValue1 = 0;
+let crystalValue2 = 0;
+let crystalValue3 = 0;
+let crystalValue4 = 0;
+resetCrystalValue();
 let wins = 0;
 let losses = 0;
 let myScore = 0;
 
 
+
 //add a global variable for myscore then in the onclick to the image to += plus the number generated and print to score html box
+function resetCrystalValue (){
+    crystalValue1 = Math.floor(Math.random()*12+1);
+    crystalValue2 = Math.floor(Math.random()*12+1);
+    crystalValue3 = Math.floor(Math.random()*12+1);
+    crystalValue4 = Math.floor(Math.random()*12+1);
+}
 
 function crystals(crystalValue){
     myScore += crystalValue; 
@@ -65,6 +73,7 @@ function scoreReset(){
     $("#score").text(myScore);
     matchNumber = getNumber();
     $('#randomNumber').html(matchNumber);
+    resetCrystalValue();
 }
 });
 
